@@ -1,0 +1,20 @@
+###项目运行环境
+
+python 3.6
+
+keras==2.2.4
+
+tensorflow==1.10.0
+
+##### 安装
+pip install keras==2.2.4
+
+pip install tensorflow==1.10.0
+
+##### 其它依赖包
+
+pillow 5
+
+H5py 
+
+Numpy
