@@ -76,7 +76,7 @@ if __name__ == "__main__":
     model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
     # 调用函数获取训练数据和标签
     x_train, y_train = prepare_data(options.train_dir)
-    x_test, y_test = prepare_data(options.train_dir)
+    x_test, y_test = prepare_data(options.test_dir)
     model.fit(x_train, y_train, shuffle=True, batch_size=options.batch_size,
               epochs=options.epochs, validation_data=(x_test, y_test))
     save_model_path = os.path.dirname(options.save_model)

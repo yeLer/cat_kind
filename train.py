@@ -93,7 +93,7 @@ if __name__ == "__main__":
     model = train_model()
     # 调用函数获取训练数据和标签
     x_train, y_train = prepare_data(options.train_dir)
-    x_test, y_test = prepare_data(options.train_dir)
+    x_test, y_test = prepare_data(options.test_dir)
 
     # 小批量数据可以将x_train, y_train一次性载入内存进行训练
     # 训练数据上按batch进行一定次数的迭代来训练网络,这里表示每次读入10张图片作为一个批量大小，数据集循环迭代32次
